@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ColumX — Advanced Electron Optics Simulation Platform</title>
 <meta name="description" content="Professional-grade TEM/STEM/SEM column design and simulation. By Shuimu Future.">
+<meta name="copyright" content="Copyright 2024-2026 Shuimu Future Technology (水木未来科技). All rights reserved.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -1149,7 +1150,7 @@
     <li><a href="#code">Examples</a></li>
     <li><a href="#install">Install</a></li>
     <li><a href="#pricing">Pricing</a></li>
-    <li><a href="https://github.com/shuimu-future/columx" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://github.com/alongai/ColumX" target="_blank" rel="noopener">GitHub</a></li>
     <li><a href="#install" class="nav-cta">Get Started</a></li>
   </ul>
   <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -1169,7 +1170,7 @@
   <div class="hero-content">
     <div class="hero-badge">
       <span class="dot"></span>
-      Open-source electron optics simulation
+      v2.3.1 Now Available
     </div>
     <h1><span class="gradient-text">ColumX</span></h1>
     <p class="hero-subtitle">Advanced Electron Optics Simulation Platform</p>
@@ -1179,7 +1180,7 @@
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v9m0 0l-3-3m3 3l3-3M3 13h10"/></svg>
         Get Started
       </a>
-      <a href="https://github.com/shuimu-future/columx" target="_blank" rel="noopener" class="btn-secondary">
+      <a href="https://columx.com/docs" target="_blank" rel="noopener" class="btn-secondary">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 12H3a1 1 0 01-1-1V3a1 1 0 011-1h8a1 1 0 011 1v3M8 14h5a1 1 0 001-1V8a1 1 0 00-1-1H8a1 1 0 00-1 1v5a1 1 0 001 1z"/></svg>
         Documentation
       </a>
@@ -1421,19 +1422,19 @@
     <div class="reveal">
       <div class="section-label">Product Tiers</div>
       <h2 class="section-title">Choose Your Plan</h2>
-      <p class="section-desc">Start free with the open-source core. Upgrade when you need GUI tools, priority support, or custom modules for your research or production workflow.</p>
+      <p class="section-desc">Start free with the Community Edition. Upgrade when you need GUI tools, priority support, or custom modules for your research or production workflow.</p>
     </div>
     <div class="pricing-grid">
       <!-- Community -->
       <div class="pricing-card reveal reveal-delay-1">
         <div class="pricing-tier">Community</div>
-        <div class="pricing-name">Open Source</div>
+        <div class="pricing-name">Community</div>
         <div class="pricing-price">Free</div>
         <p class="pricing-desc">Core simulation engine for researchers and enthusiasts.</p>
         <ul class="pricing-features">
           <li>
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 6.5 11.5 13 5"/></svg>
-            Open-source core engine
+            Core simulation engine
           </li>
           <li>
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 6.5 11.5 13 5"/></svg>
@@ -1448,7 +1449,7 @@
             Community support
           </li>
         </ul>
-        <a href="https://github.com/shuimu-future/columx" target="_blank" rel="noopener" class="pricing-btn pricing-btn-outline">Get Started Free</a>
+        <a href="https://pypi.org/project/columx/" target="_blank" rel="noopener" class="pricing-btn pricing-btn-outline">Get Started Free</a>
       </div>
       <!-- Professional -->
       <div class="pricing-card featured reveal reveal-delay-2">
@@ -1479,7 +1480,7 @@
             All Community features
           </li>
         </ul>
-        <button class="pricing-btn pricing-btn-filled">Start Free Trial</button>
+        <a href="https://pypi.org/project/columx/" target="_blank" rel="noopener" class="pricing-btn pricing-btn-filled">Start Free Trial</a>
       </div>
       <!-- Enterprise -->
       <div class="pricing-card reveal reveal-delay-3">
@@ -1509,7 +1510,7 @@
             All Professional features
           </li>
         </ul>
-        <button class="pricing-btn pricing-btn-outline">Contact Sales</button>
+        <a href="mailto:contact@columx.com?subject=Enterprise%20License" class="pricing-btn pricing-btn-outline">Contact Sales</a>
       </div>
       <!-- Academic -->
       <div class="pricing-card reveal reveal-delay-4">
@@ -1535,7 +1536,7 @@
             .edu email verification
           </li>
         </ul>
-        <button class="pricing-btn pricing-btn-outline">Apply for License</button>
+        <a href="mailto:contact@columx.com?subject=Academic%20License" class="pricing-btn pricing-btn-outline">Apply for License</a>
       </div>
     </div>
   </div>
@@ -1562,13 +1563,13 @@
       </div>
       <div class="stat-item reveal reveal-delay-4">
         <div class="stat-value">&lt;0.04%</div>
-        <div class="stat-label">Cs Accuracy vs MEBS</div>
-        <div class="stat-sublabel">spherical aberration</div>
+        <div class="stat-label">Cs Relative Error</div>
+        <div class="stat-sublabel">Validated against analytical solutions</div>
       </div>
       <div class="stat-item reveal reveal-delay-4">
         <div class="stat-value">&lt;0.02%</div>
-        <div class="stat-label">Cc Accuracy vs MEBS</div>
-        <div class="stat-sublabel">chromatic aberration</div>
+        <div class="stat-label">Cc Relative Error</div>
+        <div class="stat-sublabel">Validated against analytical solutions</div>
       </div>
     </div>
   </div>
@@ -1583,40 +1584,41 @@
           <span class="logo-mark">Cx</span>
           ColumX
         </div>
-        <p>Professional electron optics simulation for TEM, STEM, and SEM column design. Developed by Shuimu Future.</p>
+        <p style="font-weight:600;color:var(--text-secondary);margin-bottom:0.5rem;">水木未来科技 (Shuimu Future Technology)</p>
+        <p>Professional electron optics simulation for TEM, STEM, and SEM column design.</p>
       </div>
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="https://github.com/shuimu-future/columx" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://pypi.org/project/columx" target="_blank" rel="noopener">PyPI</a></li>
-          <li><a href="https://columx.readthedocs.io" target="_blank" rel="noopener">Documentation</a></li>
-          <li><a href="#">API Reference</a></li>
-          <li><a href="#">Tutorials</a></li>
+          <li><a href="https://github.com/alongai/ColumX" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://pypi.org/project/columx/" target="_blank" rel="noopener">PyPI</a></li>
+          <li><a href="https://columx.com/docs" target="_blank" rel="noopener">Documentation</a></li>
+          <li><a href="#" title="Coming Soon">API Reference</a></li>
+          <li><a href="#" title="Coming Soon">Tutorials</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="#">About Shuimu Future</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#" title="Coming Soon">About Shuimu Future</a></li>
+          <li><a href="mailto:contact@columx.com">Contact</a></li>
+          <li><a href="#" title="Coming Soon">Careers</a></li>
+          <li><a href="#" title="Coming Soon">Blog</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:contact@columx.com">contact@columx.com</a></li>
-          <li><a href="https://github.com/shuimu-future" target="_blank" rel="noopener">GitHub Organization</a></li>
+          <li><a href="https://github.com/alongai/ColumX" target="_blank" rel="noopener">GitHub Repository</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 水木未来科技 (Shuimu Future Technology). All rights reserved.</p>
+      <p>&copy; 2024-2026 水木未来科技 (Shuimu Future Technology). All rights reserved.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="mailto:contact@columx.com?subject=Privacy%20Policy">Privacy Policy</a>
+        <a href="mailto:contact@columx.com?subject=Terms%20of%20Service">Terms of Service</a>
       </div>
     </div>
   </div>
